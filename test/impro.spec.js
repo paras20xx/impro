@@ -443,7 +443,7 @@ describe('impro', () => {
         impro.metadata(),
         'to yield json output satisfying',
         {
-          image: expect.it('to exhaustively satisfy', {
+          Image: expect.it('to exhaustively satisfy', {
             Make: 'Apple',
             Model: 'iPhone 6s',
             Orientation: 6,
@@ -451,15 +451,15 @@ describe('impro', () => {
             YResolution: 72,
             ResolutionUnit: 2,
             Software: '11.2',
-            ModifyDate: expect.it('to be a string'),
+            DateTime: expect.it('to be a string'),
             YCbCrPositioning: 1,
-            ExifOffset: 192,
+            ExifTag: 192,
           }),
           // included due to the source image being rotated
           width: 4032,
           height: 3024,
-          orientedWidth: 3024,
-          orientedHeight: 4032,
+          orientedWidth: 4032,
+          orientedHeight: 3024,
         }
       ));
 
